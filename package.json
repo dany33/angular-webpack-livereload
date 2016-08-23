@@ -1,0 +1,24 @@
+{
+  "name": "angular1.x-webpack-livereload-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run build \n npm run dev ",
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --inline --hot",
+    "test": "webpack-dev-server 'mocha!./test/test.js' --hot --inline --output-filename testBundle.js \n open http://localhost:8080/testBundle"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "concurrently": "^2.0.0",
+    "html-webpack-plugin": "^2.16.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.9"
+  }
+}
